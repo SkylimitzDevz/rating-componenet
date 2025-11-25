@@ -17,7 +17,7 @@
   <body>
     <!-- --- main rating screen --- -->
     <div class="card">
-      <div class="rating-screen">
+      <div id="rating-screen">
         <div class="icon-container">
           <img src="images/icon-star.svg" alt="star icon" />
         </div>
@@ -29,18 +29,18 @@
           </p>
         </div>
         <div class="rating-container">
-          <button class="score-btn">1</button>
-          <button class="score-btn">2</button>
-          <button class="score-btn">3</button>
-          <button class="score-btn">4</button>
-          <button class="score-btn">5</button>
+          <button class="score-btn" data-value="1">1</button>
+          <button class="score-btn" data-value="2">2</button>
+          <button class="score-btn" data-value="3">3</button>
+          <button class="score-btn" data-value="4">4</button>
+          <button class="score-btn" data-value="5">5</button>
         </div>
         <div class="btn-container">
           <button id="submit-btn">SUBMIT</button>
         </div>
       </div>
       <!-- --- thankyou screen --- -->
-      <div class="thankyou-screen">
+      <div id="thankyou-screen">
         <div class="img-container">
           <img src="images/illustration-thank-you.svg" alt="tankyou image" />
         </div>
@@ -55,6 +55,12 @@
           </p>
         </div>
       </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ridma</a>.
     </div>
   </body>
   <script src="app.js"></script>

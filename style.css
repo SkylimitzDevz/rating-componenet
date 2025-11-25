@@ -72,7 +72,7 @@ button{
     cursor: pointer;
 }
 
-.rating-screen{
+#rating-screen{
     display: block;
 }
 
@@ -110,6 +110,7 @@ button{
 }
 
 .rating-container{
+    flex-wrap: wrap;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -137,10 +138,25 @@ button{
     border-radius: 50px;
     border: none;
     color: var(--Grey-950);
-    background: var(--Orange-500);
+    background: var(--Grey-500);
     font-size: 20px;
     font-weight: 700;
     transition: all 0.2s ease;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.attribution a{
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 10px;
+    padding: 4px;
+    color: var(--Orange-500);
+    background: var(--Grey-900);
 }
 
 /* --- hover animations --- */
@@ -156,7 +172,7 @@ button{
 
 /* --- thankyou-screen --- */
 
-.thankyou-screen{
+#thankyou-screen{
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -189,3 +205,13 @@ button{
     margin-top: 40px;
 }
 
+@media(max-width: 475px){
+    .rating-container{
+        gap: 5px;
+    }
+
+    .score-btn{
+        width: 55px;
+        height: 55px;
+    }
+}
